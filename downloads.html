@@ -1,3 +1,32 @@
+<label for="menu-toggle" style="font-size: 60px; cursor:pointer;"> 
+  ㊂
+</label>
+
+<input type="checkbox" id="menu-toggle" style="display:none;">
+
+<div id="slide-menu" style="position:fixed;top:0;left:-290px;width:290px;height:100%;background-color:purple;transition: left 0.3s ease-in-out;">
+  <ul style="list-style:none;padding:0;margin:0;">
+    
+      <b><a href="index.html" style="text-decoration:none;color:#ff0;font-family:'Carolyna Pro',serif;font-size:25px;font-stretch:expanded;">༒Home</a></b>  
+ <li> </li> <b><a href="gallery.html" style="text-decoration:none;color:#ff0;font-family:'Carolyna Pro',serif;font-size:25px;font-stretch:expanded;">༒School gallery</a></b>  
+   
+     <li> </li><b> <a href="links.html" style="text-decoration:none;color:#ff0;font-family:'Carolyna Pro',serif;font-size:26px;font-stretch:expanded;">༒Important links</a></b>
+  
+    <li> </li>  <b><a href="downloads.html" style="text-decoration:none;color:#ff0;font-family:'Carolyna Pro',serif;font-size:21px;font-stretch:expanded;">༒Important downloads</a></b>
+    
+      <li> </li><b><a href="updates.html" style="text-decoration:none;color:#ff0;font-family:'Carolyna Pro',serif;font-size:23px;font-stretch:expanded;">༒Important updates</a></b>
+    </li>
+  </ul>
+</div>
+
+<script>
+  document.getElementById('menu-toggle').addEventListener('change', function() {
+    var menu = document.getElementById('slide-menu');
+    this.checked ? menu.style.left = '100' : menu.style.left = '-290px';
+  });
+</script>
+
+
 
 
 <html lang="en"><head>
